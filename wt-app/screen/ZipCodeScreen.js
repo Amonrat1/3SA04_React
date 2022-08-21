@@ -9,7 +9,7 @@ const availableZipItems = [
     { place: 'Khonkaen', code: '40000' },
     { place: 'Chonburi', code: '20000' },
     { place: 'Bangkok', code: '10240' },
-    { place: 'Nakonsrithamarat', code: '80000' },
+    { place: 'Krabi', code: '81140' },
    ]
    const ZipItem = ({place, code, navigation}) => (
     <TouchableHighlight onPress= {() => {navigation.navigate('Weather', {zipCode: code})}} >
