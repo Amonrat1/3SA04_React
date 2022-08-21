@@ -5,9 +5,10 @@ export default function Forecast(props) {
     return (
         <View >
         <Text style={styles.main}>{props.main}</Text>
-       <Text style={styles.description}>{props.description}</Text>
-       <Text style={styles.temp}>{props.temp} 
+        <Text style={styles.description}>{props.description}</Text>
+        <Text style={styles.temp}>{props.temp} 
         <Text style={styles.tempText}>  °C</Text>
+        <Text style={styles.country}>{props.country} </Text>
         </Text>
         </View>
         
@@ -38,6 +39,15 @@ export default function Forecast(props) {
             textAlign: 'center',
             color: '#fff',
             fontSize: 50,
+            fontWeight: 'bold',
+            textShadowColor: 'black',
+            textShadowRadius: 5,
+        },
+        country:{
+            justifyContent: 'center',
+            textAlign: 'center',
+            color: '#fff',
+            fontSize: 30,
             fontWeight: 'bold',
             textShadowColor: 'black',
             textShadowRadius: 5,
