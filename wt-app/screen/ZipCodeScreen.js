@@ -23,7 +23,7 @@ const availableZipItems = [
    export default function ZipCodeScreen(){
     const navigation = useNavigation()
     return (
-    <ImageBackground source={require('../images.jpg')} style={styles.backdrop}>
+    <ImageBackground source={require('../1.jpg')} style={styles.backdrop}>
     <FlatList
     data={availableZipItems}
     keyExtractor={_keyExtractor}
