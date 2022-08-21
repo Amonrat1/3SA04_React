@@ -26,8 +26,8 @@ const [forecastInfo, setForecastInfo] = useState({
 }) 
 return (
     <ImageBackground source={require('../unnamed.jpg')} style={styles.backdrop}>
-    <Text>Zip Code</Text>
-    <Text>{props.zipCode}</Text>
+    <Text style={styles.zipCode}>Zip Code</Text>
+    <Text style={styles.zipCode_code}>{props.zipCode}</Text>
     <Forecast {...forecastInfo} />
     </ImageBackground>
    
@@ -41,4 +41,20 @@ return (
         width: '100%',
         height: '100%'
         },
-    }); 
+        zipCode: {
+            top: -140,
+            color: '#fff',
+            fontSize: 30,
+            fontWeight: 'bold',
+            textShadowColor: 'black',
+            textShadowRadius: 5,
+        },
+        zipCode_code: {
+            top: -230,
+            color: '#fff',
+            fontSize: 30,
+            fontWeight: 'bold',
+            textShadowColor: 'black',
+            textShadowRadius: 5,    
+        },
+        })  
