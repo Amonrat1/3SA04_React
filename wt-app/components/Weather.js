@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, Text ,StyleSheet} from 'react-native'
+import { Text,ImageBackground,StyleSheet } from 'react-native';
 import Forecast from './Forecast';
 import { useState, useEffect } from 'react';
 
@@ -38,10 +38,28 @@ export default function Weather(props) {
     
     const styles = StyleSheet.create({
         backdrop: {
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems: 'center',
-        width: '100%',
-        height: '100%',
-        }
-       });
+            flexDirection:'column',
+            justifyContent:'center',
+            alignItems:'center',
+            width: '100%',
+            height: '100%',
+            //fontSize:'20px'
+        },   
+    
+            zipCode: {
+                top: -140,
+                color: '#fff',
+                fontSize: 30,
+                fontWeight: 'bold',
+                textShadowColor: 'black',
+                textShadowRadius: 5,
+            },
+            zipCode_code: {
+                top: -230,
+                color: '#fff',
+                fontSize: 30,
+                fontWeight: 'bold',
+                textShadowColor: 'black',
+                textShadowRadius: 5,    
+        },
+    }) 
